@@ -1,0 +1,70 @@
+body {
+    background: rgb(82,75,196);
+    background: linear-gradient(90deg, rgba(82,75,196,1) 0%, rgba(23,124,204,1) 62%);
+    font-family: sans-serif;
+}
+* {
+    padding: 0;
+    margin:0;
+}
+header {
+    font-size: 16px;
+}  
+div {
+    width: 200px;
+    height: 245px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px 20px;
+    margin: auto;
+    margin-top: 130px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 14px;
+
+}
+li {
+    list-style-type: none;
+    text-align: center;
+}
+input {
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid blue;
+ 
+}
+input:focus {
+    outline: 0;
+    border: none;
+    border-bottom: 2px solid blue;
+    /* if it was active then it would not work */
+   
+}
+button {
+    width: 170px;
+    height: 26px;
+    background-color: rgb(67,34,255);
+    background: linear-gradient(18deg, rgba(67,34,255,1) 24%, rgba(80,73,255,1) 37%, rgba(120,196,255,1) 96%);
+    border: none;
+    color: white;
+    font-weight: 800;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(67,34,255);
+    background: linear-gradient(202deg, rgba(67,34,255,1) 24%, rgba(80,73,255,1) 37%, rgba(120,196,255,1) 96%);
+}
+footer {
+    font-size: 12px;
+}
+span.login {
+    color: blue;   
+}
+span.forget {
+    color: rgb(102, 101, 101);
+    cursor: pointer;
+}
+span.creat {
+    color: rgb(71, 40, 71);
+    cursor: pointer;
+}
