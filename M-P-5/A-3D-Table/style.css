@@ -1,0 +1,63 @@
+body {
+  /* if it was *{ then the background of the table wouldn't be shown */
+  text-align: center;
+  background-color: #f5d2d3;
+  font-family: "Gothic A1", sans-serif;
+  cursor: default;
+}
+h2 {
+  text-shadow: 2px 2px 5px rgb(248, 144, 165);
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  font-weight: bolder;
+  color: rgb(2, 2, 56);
+}
+
+tr:nth-child(even) {
+  background-color: #9ab7d3;
+}
+tr:nth-child(odd) {
+  background-color: #dfccf1;
+}
+table,
+td,
+th {
+  /* border: 1px solid black; */
+  height: 60px;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 3px;
+  width: 80%;
+  position: relative;
+  margin: auto;
+  /* it will fix the element in the center */
+}
+td:hover {
+  box-shadow: 2px 2px 2px black, -9px 7px 4px #d869d8;
+  /* the - is because i want it on the left */
+  background-color: #9b319b;
+  font-style: bold;
+  cursor: default;
+  /* transform: translateY(-6px);
+    transform: translateX(-6px);
+    if these were active, then the shadow would not be fixed on the front layers */
+}
+tr:hover {
+  background-color: #c8a2c8;
+}
+tr:nth-child(1) {
+  background-color: #f5d2d3;
+  color: crimson;
+  font-weight: bolder;
+  font-size: 30px;
+  /* this was not applied I don't know why */
+  /* .button:hover .front {
+        transform: translateY(-9px);*/
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Miniver", cursive;
+}
