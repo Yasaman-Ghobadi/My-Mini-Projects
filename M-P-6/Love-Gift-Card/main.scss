@@ -1,0 +1,73 @@
+// ----------------google-font------------------------
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+
+// ---------------color-variables------------------
+$dark-red: #a10a0a00;
+$light-red: #fb6a6a;
+$red: #6d0a0a;
+
+// ------------color-stops-for-gradient--------------
+$color-stops1: $dark-red, $light-red;
+
+
+// -------------------mixin(s)-----------------------------
+@mixin gradient($direction, $color-stops) {
+  background: -webkit-linear-gradient($direction, $color-stops);
+}
+
+body {
+  @include gradient(right bottom, $color-stops1);
+  background-repeat: no-repeat;
+  height: 32.5rem;
+}
+
+div.card {
+  width: 20rem;
+  height: 25rem;
+  border: 10px solid $red;
+  margin: auto;
+  margin-top: 6rem;
+  background-image: url("../13.png");
+  background-color: $red;
+  transition: 1s;
+  transition-delay: 0.1s;
+  border-radius: 0.7rem;
+}
+
+div.card:hover {
+  box-shadow: 13px -5px 25px 9px $red;
+  cursor: pointer;
+  transform: rotate(20deg);
+
+  div.text {
+    box-shadow: 9px -6px 25px 3px $red;
+  }
+
+  div.footer {
+    box-shadow: 9px -6px 25px 3px $red;
+  }
+}
+
+div.text {
+  text-align: center;
+  margin-top: 10rem;
+  font-size: 2rem;
+  color: white;
+  border: 2px solid $red;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: $red;
+  font-family: sans-serif;
+  border-radius: 0.7rem;
+}
+
+div.footer {
+  background-color: $red;
+  padding: 4px;
+  margin-top: 9.5rem;
+  text-align: center;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+body {
+  background: -webkit-linear-gradient(right bottom, #a10a0a00, #fb6a6a);
+  background-repeat: no-repeat;
+  height: 32.5rem;
+}
+
+div.card {
+  width: 20rem;
+  height: 25rem;
+  border: 10px solid #6d0a0a;
+  margin: auto;
+  margin-top: 6rem;
+  background-image: url("../13.png");
+  background-color: #6d0a0a;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  border-radius: 0.7rem;
+}
+
+div.card:hover {
+  -webkit-box-shadow: 13px -5px 25px 9px #6d0a0a;
+          box-shadow: 13px -5px 25px 9px #6d0a0a;
+  cursor: pointer;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+div.card:hover div.text {
+  -webkit-box-shadow: 9px -6px 25px 3px #6d0a0a;
+          box-shadow: 9px -6px 25px 3px #6d0a0a;
+}
+
+div.card:hover div.footer {
+  -webkit-box-shadow: 9px -6px 25px 3px #6d0a0a;
+          box-shadow: 9px -6px 25px 3px #6d0a0a;
+}
+
+div.text {
+  text-align: center;
+  margin-top: 10rem;
+  font-size: 2rem;
+  color: white;
+  border: 2px solid #6d0a0a;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: #6d0a0a;
+  font-family: sans-serif;
+  border-radius: 0.7rem;
+}
+
+div.footer {
+  background-color: #6d0a0a;
+  padding: 4px;
+  margin-top: 9.5rem;
+  text-align: center;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=main.css.map */
