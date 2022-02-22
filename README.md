@@ -6,3 +6,4 @@ All of my mini-projects:
 3. Mini-Project-3   (Login-Form)
 4. Mini-Project-4 (Christmas-Collection)
 5. Mini-Project-5   (A-3D-Table)
+6. Mini-Project-6  (Love-Gift-Card) 
