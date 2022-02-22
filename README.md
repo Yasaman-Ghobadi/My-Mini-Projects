@@ -5,3 +5,4 @@ All of my mini-projects:
 2. Mini-Project-2   (A-3D-Navbar)
 3. Mini-Project-3   (Login-Form)
 4. Mini-Project-4 (Christmas-Collection)
+5. Mini-Project-5   (A-3D-Table)
