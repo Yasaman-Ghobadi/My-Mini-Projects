@@ -1,0 +1,108 @@
+/* variables */
+
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+
+body {
+  background-color: lightgoldenrodyellow;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  /* it will cover the whole view port */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  gap: 0.2rem;
+  grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+p {
+  /* margin-top: 1.5rem; */
+}
+
+nav {
+  background: lightgreen;
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+main {
+  background: lightpink;
+  grid-area: main;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+#sidebar {
+  background: lightseagreen;
+  grid-area: sidebar;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content1 {
+  background: rgb(85, 79, 79);
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content2 {
+  background: rgb(241, 195, 78);
+  grid-area: content2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content3 {
+  background: rgb(186, 129, 240);
+  grid-area: content3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+footer {
+  background: rgb(232, 85, 100);
+  grid-area: footer;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+/* for mobiles and tablets */
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    /* for rows we have to play around 
+        and see what fits for our project */
+    grid-template-rows:
+      0.4fr 0.4fr
+      2.2fr
+      1.2fr 1.2fr 1.2fr
+      1fr;
+    grid-template-areas:
+      "nav"
+      "sidebar"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+  }
+}
