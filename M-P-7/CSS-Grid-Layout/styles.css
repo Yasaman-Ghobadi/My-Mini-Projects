@@ -32,10 +32,6 @@ body {
   text-align: center;
 }
 
-p {
-  /* margin-top: 1.5rem; */
-}
-
 nav {
   background: lightgreen;
   grid-area: nav;
